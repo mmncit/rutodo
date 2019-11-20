@@ -4,7 +4,7 @@
 
 RuToDO is a simple RESTful JSON API built with Rails 5
 
-### Live APP LINK : [https://rwitter19.herokuapp.com](https://rwitter19.herokuapp.com)
+### Live APP LINK : [GET /todos](https://fast-headland-29840.herokuapp.com/todos)
 
 #### Refereces:
 
