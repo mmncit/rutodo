@@ -27,6 +27,12 @@ RuToDO is a simple RESTful JSON API built with Rails 5
 bundle install 
 rails server
 ```
+Configure database and fake data:
+```bash
+rails db:migrate
+rails db:seed
+```
+
 How to run the test suite:
 ```bash
 bundle exec rspec
@@ -41,9 +47,9 @@ Check HTTP requests to an API with [httpie](https://httpie.org).
 # GET /todos
 $ http :3000/todos
 # POST /todos
-$ http POST :3000/todos title=Mozart created_by=1
+$ http POST :3000/todos title=Shopping created_by=Catherine
 # PUT /todos/:id
-$ http PUT :3000/todos/1 title=Beethoven
+$ http PUT :3000/todos/1 title=Hiking
 # DELETE /todos/:id
 $ http DELETE :3000/todos/1
 
@@ -51,7 +57,7 @@ $ http DELETE :3000/todos/1
 # GET /todos/:todo_id/items
 $ http :3000/todos/2/items
 # POST /todos/:todo_id/items
-$ http POST :3000/todos/2/items name='Listen to 5th Symphony' done=false
+$ http POST :3000/todos/2/items name='Listen to music' done=false
 # PUT /todos/:todo_id/items/:id
 $ http PUT :3000/todos/2/items/1 done=true
 # DELETE /todos/:todo_id/items/1
