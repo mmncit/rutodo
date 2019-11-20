@@ -28,14 +28,14 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
 
-# Figaro: Simple, Heroku-friendly Rails app configuration
-gem "figaro"
+gem "figaro" # Heroku-friendly Rails app configuration
+gem 'faker' # https://github.com/faker-ruby/faker
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails', git: 'https://github.com/rspec/rspec-rails', branch: 'v4.0.0.beta3'
-  gem 'faker' # https://github.com/faker-ruby/faker
   gem 'factory_bot_rails'
   gem 'shoulda-matchers'
   gem 'rails-controller-testing'
